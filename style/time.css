@@ -1,0 +1,52 @@
+
+/* 包含图片和进度条的容器 */ #animal-container { bottom: 0;position: fixed; width: 100%; height: 200px; overflow: hidden; border: 0px ; } /* 动物图片样式 */ #animal-img { position: fixed; left: 0; bottom: 10; transform: translateY(-50%); width: 100px; height: 50px; } /* 进度条样式 */ #progress-bar { position: absolute; bottom: 0; left: 0; width: 0; height: 10px; background-color: dimgray; transition: width 0.1s linear; } 
+.countdown {
+    display: flex;
+    justify-content: space-around;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.digit-container {
+    display: flex;
+}
+
+.digit {
+    width: 50px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: papayawhip;
+    border-radius: 5px;
+    margin: 0 5px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.digit.top {
+    transform-origin: top;
+}
+
+.digit.bottom {
+    transform-origin: bottom;
+}
+
+.digit.flip-top {
+    transform: rotateX(180deg);
+}
+
+.digit.flip-bottom {
+    transform: rotateX(-180deg);
+}
+
+.unit {
+    margin-top: 10px;
+}
+.sp{
+    margin-top: 22px;
+}
